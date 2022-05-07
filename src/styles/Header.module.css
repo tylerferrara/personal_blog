@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(241, 183, 122);
+    display: flex;
+    color: rgb(79, 52, 22);
+    justify-content: left;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.nomargin {
+    margin: 0;
+    font-family: Futura;
+    font-size: 24px;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.header a {
+    color: rgb(79, 52, 22);
+    font-weight: 300;
+    text-decoration: none;
+}
