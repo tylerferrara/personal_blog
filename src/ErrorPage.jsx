@@ -1,7 +1,7 @@
 function ErrorPage() {
-    return <>
-    <p>Oh no.... </p>
-    </>
+	return <>
+		<p>Oh no.... </p>
+	</>;
 }
 
 export default ErrorPage;
