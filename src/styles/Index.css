@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #EDECEE;
+  font-family: Futura;
+}
+
+a {
+  text-decoration: none;
+  color: #FFCA85;
 }
 
 code {

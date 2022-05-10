@@ -1,8 +1,8 @@
 import SolidMarkdown from "solid-markdown";
 import { Show, createResource } from "solid-js";
 
-import './styles/Page.module.css';
-import styles from './styles/Page.module.css';
+import './styles/Article.module.css';
+import styles from './styles/Article.module.css';
 
 const getContent = async (url) => {
     const utf8Decoder = new TextDecoder('utf-8');
@@ -20,7 +20,7 @@ const getContent = async (url) => {
     return result
 }
 
-function Page() {
+function Article() {
     const [rawMarkdown] = createResource('https://raw.githubusercontent.com/tylerferrara/local_library/main/articles/first_article.md', getContent);
     return  (<>
         <Show when={!rawMarkdown.loading} fallback={<div>Loading...</div>}>
@@ -30,4 +30,4 @@ function Page() {
     )
 }
 
-export default Page;
+export default Article;

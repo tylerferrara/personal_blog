@@ -1,0 +1,22 @@
+a {
+    color: #EDECEE;
+}
+
+span {
+    color: #61FFCA;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    font-family: 'Consolas', Courier, monospace;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    color: #FFCA85;
+}
+
+.results {
+    margin-top: 1rem;
+}

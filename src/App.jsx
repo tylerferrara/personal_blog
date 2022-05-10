@@ -1,21 +1,25 @@
 import { Routes, Route } from "solid-app-router"
 import styles from './styles/App.module.css';
-import Home from './Home';
-import Page from './Page';
+import Articles from './Articles';
+import Article from './Article';
+import ComingSoon from './ComingSoon';
+import ErrorPage from './ErrorPage';
 import Header from './Header'
 
 
 function App() {
-  return (<>
+  return (<div class={styles.app}>
     <Header />
-    <div class={styles.header}>
-    
+    <div class={styles.body}>
     <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/page" element={<Page />} />
+      <Route path="/" element={<Articles/>} />
+      <Route path="/article" element={<Article />} />
+      <Route path="/projects" element={<ComingSoon />} />
+      <Route path="/projects" element={<ComingSoon />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
     </div>
-  </>
+  </div>
 
   );
 }
