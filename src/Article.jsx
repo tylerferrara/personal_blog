@@ -10,14 +10,14 @@ const getContent = async (url) => {
     if (!resp.ok) {
         throw new Error('Network response was not OK');
     }
-    const reader = resp.body.getReader()
+    const reader = resp.body.getReader();
     let done, value;
-    let result = ""
+    let result = "";
     while (!done) {
         ({value, done} = await reader.read());
         result += utf8Decoder.decode(value);
     }
-    return result
+    return result;
 }
 
 function Article() {
