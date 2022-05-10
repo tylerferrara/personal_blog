@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #EDECEE;
-  font-family: Futura;
+  font-family: Futura, monaco, monospace;
 }
 
 a {
@@ -14,7 +14,3 @@ a {
   color: #FFCA85;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
